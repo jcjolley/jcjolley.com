@@ -35,7 +35,7 @@
 
 (defn show-random-comic []
   [:div
-   [:h2 "Laugh a little"]
+   [:h2 "Laugh a little (or a lot!)"]
    [:img.comic {:src (get-random-comic-url @state) :style {:width "100%"}}]])
 
 (defn layout [header body sidebar footer]
