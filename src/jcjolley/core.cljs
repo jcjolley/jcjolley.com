@@ -64,9 +64,9 @@
     [:div.col-md-4 
      [:h4 "Other places to see"]
      [:ul.list-group
-      [:li.list-group-item "Item One"]
-      [:li.list-group-item "Item Two"]
-      [:li.list-group-item "Item Three"]]]
+      [:li.list-group-item [:a {:href "https://xkcd.com"} "XKCD"]]
+      [:li.list-group-item [:a {:href "https://xda-developers.com"} "XDA"]]
+      [:li.list-group-item [:a {:href "https://brandonsanderson.com/"} "Brandon Sanderson"]]]]
     [:div.col-md-8
      [:div.card.p-4
       [:h5 "About the author"]
@@ -77,19 +77,19 @@
         [:p "A big long blurb of text about me, maybe some links to work I want to highlight.
             make it all techinical and cool so potential employers are impressed.  But no too snobby"]]]]]]
    [:div.row
-    [:footer "@Copyright 2018 Joshua Jolley"]
+    [:footer.m-3 {:style {:font-size "80%"}} "@Copyright 2018 Joshua Jolley"]
     ]])
 
 (defn sidebar []
   [:div 
    [:h2 "Cool Links"]
    [:ul.list-group
-    [:li.list-group-item "Item One"]
-    [:li.list-group-item "Item Two"]
-    [:li.list-group-item "Item Three"]
-    [:li.list-group-item "Item Four"]
-    [:li.list-group-item "Item Five"]
-    [:li.list-group-item "Item Six"]]])
+    [:li.list-group-item [:a {:href "http://clicker.jcjolley.com/"} "A&C Clicker"] ]
+    [:li.list-group-item [:a {:href "https://blockchain.jcjolley.com/"} "Node Blockchain"] ]
+    [:li.list-group-item [:a {:href "https://github.com/jcjolley/"} "GitHub Repos"] ]
+    [:li.list-group-item [:a {:href "https://www.twitch.tv/s1mply_me"} "Twtich Channel"] ] 
+    [:li.list-group-item [:a {:href "https://stackoverflow.com/users/3014497/jolleyboy"} "My StackOverflow"] ] 
+    ]])
 
 (defn home-page []
   (layout header show-random-comic sidebar footer)
