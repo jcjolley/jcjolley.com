@@ -84,6 +84,7 @@
   [:div 
    [:h2 "Cool Links"]
    [:ul.list-group
+    [:li.list-group-item [:a {:href "http://spire.jcjolley.com"} "Slay the Spire Highscores"] ]
     [:li.list-group-item [:a {:href "https://tensorflow-dnd.jcjolley.com/"} "Tensorflow DnD Classifier"] ]
     [:li.list-group-item [:a {:href "http://clicker.jcjolley.com/"} "A&C Clicker"] ]
     [:li.list-group-item [:a {:href "https://blockchain.jcjolley.com/"} "Node Blockchain"] ]
